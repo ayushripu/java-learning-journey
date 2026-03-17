@@ -25,7 +25,7 @@ class B extends A
         super();  
     }
 }
-public class CheckNewConst {
+public class ChecknewConst {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

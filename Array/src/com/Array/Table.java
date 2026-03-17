@@ -1,0 +1,21 @@
+package com.Array;
+import java.util.*;
+public class Table
+{
+	public static void main(String[] args)
+	{
+		int n;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Which Number Do You Want Print Table : ");
+		n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<a.length;i++)
+		{
+			for(i=1;i<=10;i++)
+			{
+				System.out.println(n+"*"+i+" = "+(i*n));
+			}
+		}
+		sc.close();
+	}
+}

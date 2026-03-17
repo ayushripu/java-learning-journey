@@ -1,0 +1,23 @@
+package com.Array;
+
+import java.util.Arrays;
+
+public class Copy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[]= {2,3,4,5};
+		int b[]= new int[a.length];
+		
+		for(int i=0;i<a.length;i++)
+		{
+			b[i]=a[i];
+			
+		}
+		System.out.println("b[i]= "+Arrays.toString(b));
+		System.out.println("a[i]= "+Arrays.toString(a));
+		
+		
+	}
+
+}

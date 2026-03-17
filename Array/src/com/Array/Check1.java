@@ -1,0 +1,28 @@
+package com.Array;
+
+import java.util.Scanner;
+
+public class Check1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed length of the array :-> ");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		System.out.println("Inputed "+n+" Element :-> ");
+		for(int i=0;i<a.length-1;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("Inputed Element is :- ");
+		for(int i=0;i<a.length-1;i++)
+		{
+			System.out.print(a[i]);
+			if(a[i]<a.length-1)
+			{
+				System.out.print(",");
+			}
+		}
+	}
+}

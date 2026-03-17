@@ -1,0 +1,21 @@
+package com.Array;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class NaturalNo
+{
+	public static void main(String[] args) {
+		int n;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Inputed How Many Number Do You Want To Print : ");
+		n=sc.nextInt();
+		int[] a=new int[n];
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=i+1;
+		}
+		System.out.println(Arrays.toString(a));
+		sc.close();
+	}
+}

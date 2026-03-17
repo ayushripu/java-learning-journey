@@ -1,0 +1,38 @@
+package com.Array;
+
+import java.util.Scanner;
+
+public class FindBook 
+{
+	public static void main(String[] args) 
+	{
+		int n,i;
+		String Find="Math";
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed How Many Subject DO You Want : ");
+		n=sc.nextInt();
+		sc.nextLine();
+		String a[]=new String[n];
+		for(i=0;i<a.length;i++)
+		{
+			System.out.print("What's Your First Book Name "+(i+1)+":-");
+			a[i]=sc.nextLine();
+		}	
+		for(i=0;i<a.length;i++)
+		{
+			System.out.println("My"+(i+1)+" Book Name is "+a[i]);
+			
+		}
+		for(i=0;i<a.length;i++)
+		{
+			if(a[i].equals(Find))
+			{
+				System.out.println("Your Book Is "+Find+" Found At index :"+(i+1));
+			}
+			else
+			{
+				System.out.println("Your Book is Not Found ");
+			}
+		}
+	}
+}

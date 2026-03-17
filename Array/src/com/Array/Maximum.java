@@ -1,0 +1,33 @@
+package com.Array;
+
+import java.util.Scanner;
+
+public class Maximum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("How many Numbers do you want to print :-> ");
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]= new int[n];
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		int fmax=a[0],smax=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if(fmax<a[i])
+			{
+				smax=fmax;
+				fmax=a[i];
+			}
+			else if(a[i]<fmax && a[i]>smax)
+			{
+				smax=a[i];
+			}
+		}
+		System.out.print("First Max:-> "+fmax+"\n"+"Second Max :-> "+smax);
+	}
+
+}

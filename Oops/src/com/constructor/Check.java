@@ -1,0 +1,22 @@
+package com.constructor;
+class Animal {
+    Animal() 
+    {
+        System.out.println("Animal constructor called");
+    }
+}
+class Dog extends Animal 
+{
+    Dog() 
+    {
+        super();  // Calls Animal's constructor
+        System.out.println("Dog constructor called");
+    }
+}
+public class Check
+{
+	public static void main(String[] args)
+	{
+		Dog d=new Dog();
+	}
+}

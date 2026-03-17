@@ -1,0 +1,44 @@
+package com.inheritance;
+/*: एक प्रोग्राम बनाओ जिसमें एक Person class हो जो नाम और उम्र स्टोर करे।
+फिर एक Employee class बनाओ जो Person से इनहेरिट करे और
+उसमें employee ID और salary की जानकारी भी हो। 
+दोनों classes में एक method हो जो उनकी details print करे।*/
+class Person
+{
+	String name;
+	int age;
+	public Person(String name,int age)
+	{
+		this.name="Ayush";
+		this.age=21;
+	}
+	public void details()
+	{
+		System.out.println("Name : "+this.name);
+		System.out.println("Age : "+this.age);
+	}
+}
+class Employe extends Person
+{
+	int Empid;
+	double salary;
+	public Employe(String name, int age,int Empid, double salary)
+	{
+		super(name,age);
+		this.Empid=105;
+		this.salary=9786.5;
+	}
+	public void details()
+	{ 	super.details();
+		System.out.println("Employe id : "+this.Empid);
+		System.out.println("Salary : "+this.salary);
+	} 
+}
+public class Details {
+
+	public static void main(String[] args) {
+		Employe ep = new Employe(null, 0, 0, 0);
+		ep.details();
+	}
+
+}

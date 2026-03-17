@@ -1,0 +1,19 @@
+package com.For;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int n=378,r=0;
+		double d=0;
+		int sum=0;
+		while(n>0)
+		{
+			r=n%10;
+			n=n/10;
+			d=Math.cbrt(r);
+			System.out.println(r);
+		}
+		System.out.println("Of Polindram = "+d);
+	}
+
+}

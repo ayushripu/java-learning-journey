@@ -1,0 +1,20 @@
+package com.Set;
+import java.util.*;
+public class SortedSetCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		TreeSet<Integer>s=new TreeSet<>();
+		
+		for(int i=0;i<=4;i++)
+		{
+			System.out.print("Inputed "+(i+1)+ " Element : ");
+			s.add(sc.nextInt());
+		}
+		
+		System.out.println(s);
+//		System.out.println(s.first());
+		sc.close();
+	}
+}

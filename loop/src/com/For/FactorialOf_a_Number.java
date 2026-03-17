@@ -1,0 +1,17 @@
+package com.For;
+
+public class FactorialOf_a_Number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int f=1;
+		System.out.print("1");
+		for(int i=2;i<=5;i++)
+		{
+			System.out.print("*"+i);
+			f=f*i;
+		}
+		System.out.println(" = "+f);
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.string;
+
+import java.util.Scanner;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+		// Find UserName or Domain Name of user
+//		ayushbbu37@gmail.com
+		
+		System.out.println("Inputed Email i'd");
+		Scanner sc=new Scanner(System.in);
+		String str=sc.next();
+		int j=str.indexOf('@');
+		int k=str.indexOf('.');
+		System.out.println("User Name = "+str.substring(0, j));
+		
+		System.out.println("Domain Name = "+str.substring(j+1, str.length()));
+	}
+
+}

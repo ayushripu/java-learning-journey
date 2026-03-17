@@ -1,0 +1,29 @@
+package com.Queue;
+import java.util.*;
+
+class MyComprator implements Comparator
+{
+	public int compare(Object obj1, Object obj2)
+	{
+		String s1 = (String) obj1;
+		String s2 = obj2.toString();
+		return s2.compareTo(s1);
+	}
+}
+public class CusomizedPriority {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PriorityQueue q=new PriorityQueue(15,new MyComprator());
+		
+		q.offer("A");
+		q.offer("z");
+		q.offer("l");
+		q.offer("b");
+		
+		System.out.println(q);
+		
+		
+	}
+
+}

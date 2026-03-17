@@ -1,0 +1,12 @@
+package com.check;
+
+public class UncheckedExcp {
+
+	public static void main(String[] args)
+	{
+		int c=10/0;
+		System.out.println(c);
+		
+	}
+
+}

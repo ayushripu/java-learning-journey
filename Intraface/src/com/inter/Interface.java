@@ -1,0 +1,50 @@
+package com.inter;
+interface Animal
+{
+	public void dog();
+	public void cat();
+	public void Lion();
+}
+interface Human
+{
+	public void Man();
+	public void Women();
+}
+class CheckAnimal implements Animal,Human
+{
+	public void dog()
+	{
+		System.out.print("Mostly Dog are favorite Animal Of ");
+	}
+	public void Man()
+	{
+		System.out.println("Man");
+	}
+	public void cat()
+	{
+		System.out.print("Mostly Cat are favorite Animal Of ");
+	}
+	public void Women()
+	{
+		System.out.println("Women");
+	}
+	public void Lion()
+	{
+		System.out.println("Lion is Very Anger Animal ");
+	}
+}
+public class Interface {
+	
+
+	public static void main(String[] args) {
+		
+		CheckAnimal ca=new CheckAnimal();
+		ca.dog();
+		ca.Man();
+		ca.cat();
+		ca.Women();
+		ca.Lion();
+
+	}
+
+}

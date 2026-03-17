@@ -1,0 +1,27 @@
+package com.newArray;
+
+import java.util.Arrays;
+
+public class StringSort {
+
+	public static void main(String[] args) {
+		String s[]= {"I","Love","My","India"};
+		String str="";
+//		for(int i=0;i<s.length;i++)
+//		{
+//			str=str.concat(" "+s[i]);
+//			System.out.println(str.concat(s[i])+"	 "+s[i].length());
+//		}
+		String rev="";
+		for(String s1:s) 
+		{
+			for(int j=s1.length()-1;j>=0;j--) 
+			{
+				rev+=s1.charAt(j);
+			}
+			System.out.print(rev+" ");
+			rev="";
+		}
+		System.out.println(str.trim());
+	}
+}

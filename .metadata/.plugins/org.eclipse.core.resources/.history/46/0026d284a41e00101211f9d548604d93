@@ -1,0 +1,54 @@
+package com.inheritance;
+/*एक प्रोग्राम बनाओ जिसमें एक Vehicle class हो।
+ *  उससे Car और Bike class inherit करें। 
+ *  हर class में एक method हो जो उसके type के बारे में print करे। */
+class Vehicle 
+{
+	public static void gaadi()
+	{
+		System.out.println("Your Vehicle have");
+	}
+	public void Color()
+	{
+		System.out.println("Red Color");
+	}
+	public void wheel()
+	{
+		System.out.println("10 Wheel");
+	}
+}
+class Bike extends Vehicle
+{
+	public void Color()
+	{
+		System.out.println("Black Color");
+	}
+	public void wheel()
+	{
+		System.out.println("2 Wheel");
+	}
+}
+class Car extends Vehicle
+{
+	
+	public void Color()
+	{
+		System.out.println("White Color");
+	}
+	public void wheel()
+	{
+		System.out.println("4 Wheel");
+	}
+}
+
+public class CarDetails {
+
+	public static void main(String[] args) {
+		Car c=new Car();
+		Vehicle.gaadi();
+		c.Color();
+		c.wheel();
+
+	}
+
+}

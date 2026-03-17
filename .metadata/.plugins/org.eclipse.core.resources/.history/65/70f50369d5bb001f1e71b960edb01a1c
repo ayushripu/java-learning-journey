@@ -1,0 +1,28 @@
+package com.problem;
+
+import java.util.Scanner;
+
+public class Aurthmatic {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		int a,b;
+		System.out.println("Inputed first Number :-> ");
+		System.out.println("Inputed Second Number :-> ");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		
+		int sum=a+b;
+		int sub=a-b;
+		int mult=a*b;
+		int div=a/b;
+		
+		System.out.println("sum ="+ sum);
+		System.out.println("sub ="+ sub);
+		System.out.println("mult ="+ mult);
+		System.out.println("div ="+ div);
+	}
+
+}

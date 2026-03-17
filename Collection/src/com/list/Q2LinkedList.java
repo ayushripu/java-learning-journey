@@ -1,0 +1,37 @@
+package com.list;
+import java.util.*;
+public class Q2LinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		LinkedList<String> ls=new LinkedList<>();
+		
+		for(int i=0;i<=4;i++)
+		{
+			System.out.print("Enter "+i+" Element :");
+			ls.add(sc.next());
+		}
+		System.out.println("Original List: "+ls);
+		
+		System.out.print("Which Element You Want to Add First : ");
+		ls.addFirst(sc.next());
+		System.out.print("Which Element You Want to Add Last : ");
+		ls.addLast(sc.next());
+		
+		System.out.println("After addFirst() and addLast(): "+ls);
+		
+		ls.removeFirst();
+		ls.removeLast();
+		
+		System.out.println("After removeFirst() and removeLast(): "+ls);
+		
+		System.out.println("Final List Element: ");
+		for(String finalList : ls)
+		{
+			System.out.println(finalList);
+		}
+	} 
+
+}

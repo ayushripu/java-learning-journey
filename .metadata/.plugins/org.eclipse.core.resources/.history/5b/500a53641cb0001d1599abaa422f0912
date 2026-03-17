@@ -1,0 +1,11 @@
+package com.Array;
+
+public class Min {
+
+	public static void main(String[] args) 
+	{
+		int n;
+		Scanner sc=new 
+	}
+
+}

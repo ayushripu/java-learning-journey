@@ -1,0 +1,25 @@
+package com;
+
+import java.lang.*;
+import java.util.Scanner;
+class Matching {
+	public static void main(String[] args) {
+		// Implement your code here 
+		int n,temp=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed Number = ");
+		n=sc.nextInt();
+		System.out.print(temp+",");
+		for(int i=1;i<n;i++)
+		{		
+		    temp=temp*2;
+		    System.out.print(temp);
+		    if(i<n-1)
+		    {
+		        System.out.print(",");
+		    }
+		}
+	
+		
+	}
+}

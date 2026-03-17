@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+class QuadraticEquation
+{
+	public static void main(String[]args)
+	{
+		int a,b,c,x;
+		double r1,r2;
+		System.out.println("Value of a,b,c");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		
+		r1= (-b+Math.sqrt(b*b-4*a*c))/(2*a);
+		r2= (-b-Math.sqrt(b*b-4*a*c))/(2*a);
+	
+		System.out.println("R1= "+r1);
+		System.out.println("R2= "+r2);
+
+
+	}
+}

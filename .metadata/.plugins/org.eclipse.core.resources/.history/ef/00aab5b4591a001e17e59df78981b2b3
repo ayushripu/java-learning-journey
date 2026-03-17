@@ -1,0 +1,12 @@
+package com.string;
+
+public class Formate {
+
+	public static void main(String[] args) 
+	{
+		String str="Java";
+		String str2="Java";
+		System.out.println(str==str2);
+	}
+
+}

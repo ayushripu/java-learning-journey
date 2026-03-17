@@ -1,0 +1,30 @@
+package com.check;
+
+public class ControlFlowofTryCatch2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try
+		{
+			System.out.println("Statement 1: "+10/2);
+			System.out.println("Statement 2: "+60/10);
+			System.out.println("Statement 3: "+20/5);  
+			System.out.println("Statement 4: "+100/10);
+//			System.out.println("Statement 5: "+5/2);
+		}
+		catch(Exception e)
+		{
+			try
+			{
+				System.out.println("Statement 6: "+20/0);
+			}
+			catch(Exception a)
+			{
+				System.out.println(1000/10);
+			}
+		}
+		System.out.println("Statement 7: "+"End all");
+	}
+	}
+
+}

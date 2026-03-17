@@ -1,0 +1,21 @@
+package com.For;
+
+public class Reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=237,r=0,rev=0;
+		
+		System.out.println("Inputed Number is :-> "+n);
+		System.out.print("Revere Number is :-> ");
+		while(n>0)
+		{
+			r=n%10;
+			n=n/10;
+			System.out.println(r);
+			rev=rev*10+r;
+		}
+		System.out.println(rev);
+	}
+
+}

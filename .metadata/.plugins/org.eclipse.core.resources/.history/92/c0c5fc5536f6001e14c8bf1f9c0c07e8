@@ -1,0 +1,27 @@
+package com.Test;
+
+import java.util.Scanner;
+
+public class Question5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[]=new int[5];
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(i+". ");
+			a[i]=sc.nextInt();
+		}
+			a[a.length-1]=a[0];
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=a.length-1;
+		}
+		for(int x:a)
+		{
+			System.out.println(x);
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.string;
+
+public class LengthOfLastWord {
+
+	public static void main(String[] args) {
+		String j="Hello world";
+		String s=j.trim();
+	String lastword = s.substring(s.lastIndexOf(" ")+1);
+	System.out.println(lastword.length());
+//	return lastword.length();
+	}
+}

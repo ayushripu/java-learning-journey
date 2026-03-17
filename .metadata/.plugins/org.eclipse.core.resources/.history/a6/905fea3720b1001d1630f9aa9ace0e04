@@ -1,0 +1,38 @@
+package com.Array;
+
+import java.util.Scanner;
+
+public class FindBook 
+{
+	public static void main(String[] args) 
+	{
+		int i=0 ;
+		String find="Computer";
+		Scanner sc=new Scanner(System.in);
+		System.out.print("How Many Books Do You Want : ");
+		int n=sc.nextInt();
+		String Book[]=new String[n];
+		sc.nextLine();
+		for(i=0;i<Book.length;i++)
+		{
+			System.out.print("Book No "+(1+i)+" is : ");
+			Book[i]=sc.nextLine();
+		}
+		System.out.println("Your All Books is : ");
+		for(i=0;i<Book.length;i++)
+		{
+			System.out.println("Book No "+(1+i)+" is : "+Book[i]);
+		}
+		for(i=0;i<Book.length;i++)
+		{
+			if(Book[i].equals(find))
+			{
+				System.out.println("Your Book is "+find+" found of index "+i);
+			}
+			else
+			{
+				System.out.println("Your Book is "+find+" Not found at any index ");
+			}
+		sc.close();}
+	}
+}

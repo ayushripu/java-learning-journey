@@ -1,0 +1,22 @@
+public class Second
+{
+	public static void main(String[] args)
+	{
+		int a[]={2,3,5,8,9};
+		int max=smax=a[0];
+		for(int i=1;i<a.length;i++)
+		{
+			if(a[i]>max)
+			{
+				max=smax;
+				max=a[i];	
+			}
+			else if(a[i]>max)
+			{
+				smax=a[i];
+			}
+		}
+		System.out.println("1st Max : "+max);
+		System.out.println("2nd Max : "+smax);
+	}
+}

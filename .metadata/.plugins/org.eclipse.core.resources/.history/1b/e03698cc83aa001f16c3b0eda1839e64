@@ -1,0 +1,11 @@
+package com.string;
+
+public class UpperCase2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="java";
+		System.out.println(str.toUpperCase());
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.inter;
+class BMW
+{
+	public void Type()
+	{
+		System.out.println("Super Car");
+	}
+}
+
+
+public class NeedInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BMW b=new BMW();
+		b.Type();
+	}
+
+}

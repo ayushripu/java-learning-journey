@@ -1,0 +1,59 @@
+
+package com.For;
+
+import java.util.Scanner;
+
+public class ATM 
+{
+	public static void main(String[] args)
+	{
+		int n=0,amount=50000,deb=0,cre=0;
+		String sc;
+		System.out.println("Hello Sir, Welcome To SBI ");
+		Scanner s=new Scanner (System.in);
+		System.out.print("What's Your Name :-> ");
+		sc=s.nextLine();
+		System.out.println("\nHello "+sc+" Sir,"+"\n"+"What Can I Help You ? \n");
+		for(int i=1;i<=3;i++)
+		{
+			System.out.println(i+". Check Bank Balance ");
+			i++;
+			System.out.println(i+". Credited Amount ");
+			i++;
+			System.out.println(i+". Debited Amount \n");
+		}
+		System.out.print("Which Option Do You Choose :-> ");
+		n=s.nextInt();
+		for(int i=1;i<=3;)
+		{	
+			if(i==n)
+			{
+				System.out.println("Your Total Account Bls is : "+amount+" Rs");
+				break;
+			}	
+			else if(i==n)
+			{
+				System.out.print("\nHow Much Money Do You Want To Credited : ");
+				cre=s.nextInt();
+				amount=amount+cre;
+				System.out.println("\nYour Amount is "+cre+" Rs Successfull Credited in Your Account");	
+				System.out.println("Your Total Amount is : "+amount);
+				break;
+			}
+			else if(i==n)
+			{
+				System.out.print("\nHow Much Money Do You Want To Debited : ");
+				deb=s.nextInt();
+				amount=amount-deb;
+				System.out.println("Your Amount "+deb+" Rs Successfull debited");
+				System.out.println("Your Total Amount is : "+amount);
+				break;
+			}
+			else
+			{
+				System.out.println("	: Invalid Option :   ");
+				break;
+			}
+		}	
+	}
+}

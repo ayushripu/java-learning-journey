@@ -1,0 +1,14 @@
+package com.string;
+
+import java.util.Scanner;
+
+public class Q1 {
+
+	public static void main(String[] args) {
+		// Find the email id is on gmail
+		System.out.print("Enter Email id:-> ");
+		Scanner sc=new Scanner(System.in);
+		String str=sc.next();
+	}
+
+}

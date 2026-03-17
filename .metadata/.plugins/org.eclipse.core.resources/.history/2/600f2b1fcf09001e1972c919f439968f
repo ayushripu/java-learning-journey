@@ -1,0 +1,11 @@
+package com.Operators;
+
+public class CheckDataType {
+
+	public static void main(String[] args) 
+	{
+		for(byte a=0;a<127;a++)
+		System.out.println(a);
+	}
+
+}

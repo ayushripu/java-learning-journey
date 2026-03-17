@@ -1,0 +1,24 @@
+package com.mehod;
+
+import java.util.Scanner;
+
+public class Check2 {
+	public static int Multiply(int x,int y)
+	{
+		int z=x*y;
+		return z;
+	}
+	
+	public static void main(String[]args)
+	{	Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed 1st Number :-> ");
+		int a=sc.nextInt();
+		System.out.println("Inputed 2nd Number :-> ");
+		int b=sc.nextInt();
+		
+		int z=Multiply(a,b);
+		System.out.println(z);
+		
+	}
+
+}

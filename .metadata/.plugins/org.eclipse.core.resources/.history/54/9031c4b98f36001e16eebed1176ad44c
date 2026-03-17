@@ -1,0 +1,31 @@
+package com.For;
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int n,r=0;
+		int sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed any Number :-> ");
+		n=sc.nextInt();
+		while(n>0)
+		{
+			r=n%10;
+			n=n/10;
+			System.out.println(r);
+			sum=sum+r*r*r;
+		}
+		System.out.println(sum);
+		if(n!=sum)
+		{
+			System.out.println("Not AramStrong Number");
+		}
+		else
+		{
+			System.out.println("Its ArmStronng");
+		}
+	}
+
+}

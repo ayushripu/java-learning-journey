@@ -1,0 +1,31 @@
+package com.check;
+
+public class NestedTryCatchFinally {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try
+		{
+			System.out.println("Outer Try Block");
+			try
+			{
+				System.out.println("Inner Try Block");
+				System.out.println(10/0);
+			}
+			catch(ArithmeticException e)
+			{
+				System.out.println("Inner Catch block");
+			}
+			System.out.println("OutSide of Inner Catch Block");
+		}
+		catch(Exception e)
+		{
+			System.out.println("Outer Catch Block");
+		}
+		finally
+		{
+			System.out.println("Outer Finally Block");
+		}
+	}
+
+}

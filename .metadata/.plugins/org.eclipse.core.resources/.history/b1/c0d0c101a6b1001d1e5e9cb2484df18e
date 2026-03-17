@@ -1,0 +1,22 @@
+import java.util.*;
+public class Random
+{
+	public static void main(String[] args)
+	{
+		int n,max,min;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed How Many Number Do You Want :-> ");
+		n=sc.nextInt();
+		int a[]=new int[n];
+		System.out.print("Inputed Maximum Number : ");
+		max=sc.nextInt();
+		System.out.print("Inputed Minimum Number : ");
+		min=sc.nextInt();
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=(int)(Math.random()*(max-min)+min);
+		} 
+			System.out.print("Random Number is :- ");
+			System.out.println(Arrays.toString(a));
+	}
+}

@@ -1,0 +1,13 @@
+package com.For;
+
+import java.util.Scanner;
+
+public class DisplayDigit 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed any Number :-> ");
+		int n=sc.nextInt();
+	}
+}

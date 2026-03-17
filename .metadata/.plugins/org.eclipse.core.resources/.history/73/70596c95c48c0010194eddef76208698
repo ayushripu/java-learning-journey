@@ -1,0 +1,22 @@
+package com.check;
+
+public class ControlFlowofTryCatch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try
+		{
+			System.out.println(10/2);
+			System.out.println(60/10);
+			System.out.println(20/0);
+			System.out.println(100/10);
+			System.out.println(5/2);
+		}
+		catch(Exception e)
+		{
+			System.out.println(20/5);
+		}
+		System.out.println("End all");
+	}
+
+}

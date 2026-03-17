@@ -1,0 +1,23 @@
+package com.Array;
+//Print Square Root Of Each Element
+import java.util.Scanner;
+public class Root
+{
+	public static void main(String args[])
+	{
+		int n;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed How Much Number :-> ");
+		n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("Square Root is : ");
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println(Math.sqrt(a[i]));
+		}
+	}
+}

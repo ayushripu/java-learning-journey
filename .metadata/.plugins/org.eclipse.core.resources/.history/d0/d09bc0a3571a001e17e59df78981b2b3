@@ -1,0 +1,12 @@
+package com.string;
+
+public class Formate {
+
+	public static void main(String[] args) 
+	{
+		int a=10;
+		System.out.format("%d",a);
+		System.out.format("\n Hello");
+	}
+
+}

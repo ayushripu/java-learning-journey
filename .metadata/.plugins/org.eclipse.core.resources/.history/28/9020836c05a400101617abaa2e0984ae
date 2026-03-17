@@ -1,0 +1,35 @@
+package com.leatcode;
+
+import java.util.Scanner;
+
+class Solution
+{
+    public boolean isValid(String s) 
+    {
+          for(int i=1;i<=s.length();i++)
+          {
+        	  String str= s.substring(0, i);
+//        	  System.out.println(i+": "+str);
+        	  
+        	 if(str == "()" || str == "()[]{}" || str == "([])")
+       	  {
+       		  System.out.println(str);
+       		  return true;
+       	  }
+        	  
+          }
+          return false;
+    }
+}
+public class Q20 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		Solution s=new Solution();
+		
+		System.out.println(s.isValid("([])"));
+		
+	}
+
+}

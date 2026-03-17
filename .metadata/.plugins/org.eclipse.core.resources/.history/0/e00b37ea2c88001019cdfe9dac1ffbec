@@ -1,0 +1,33 @@
+package com.check;
+
+public class First {
+
+	public static void main(String[] args) 
+	{
+			dostuff();
+		}
+		 static void dostuff()
+		  {
+			 domorestuff(); 
+		  }
+			 static void domorestuff()
+			 {
+				 try 
+				 { 
+				 System.out.println(10/0);
+				 
+				 }
+				 catch(ArithmeticException e)
+				 {
+					 System.out.println(e+" Hlw");
+					 stuff();
+//					e.printStackTrace(); 
+				 }
+			 }
+		 
+		 static void stuff()
+		 {
+			 System.out.println(10%2);
+		 }
+	}
+

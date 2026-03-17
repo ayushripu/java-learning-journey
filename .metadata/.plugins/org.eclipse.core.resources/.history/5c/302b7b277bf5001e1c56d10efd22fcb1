@@ -1,0 +1,19 @@
+package com.Array;
+
+public class Copy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[]= {2,3,4,5};
+		int b[]= {};
+		
+		for(int i=0;i<a.length;i++)
+		{
+			b[i]=a[i];
+			System.out.print("a[i]= "+a[i]+"\n");
+			System.out.print("b[i]= "+b[i]+"\n");
+		}
+		
+	}
+
+}

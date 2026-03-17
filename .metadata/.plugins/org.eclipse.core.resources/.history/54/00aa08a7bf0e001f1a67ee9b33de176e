@@ -1,0 +1,15 @@
+package com.mehod;
+public class Check2
+{
+	static String  name(String email)
+	{
+		return name(null);
+	}
+	public static void main(String[] args) {
+		String str="ayush@1234";
+		int name=str.indexOf("@");
+		String em=str.substring(0,name);
+		name(em);
+		System.out.println(em);
+	}
+}

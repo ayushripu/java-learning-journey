@@ -1,0 +1,15 @@
+package com.string;
+
+public class ArgumentIndex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="Ayush";
+		int i=10;
+		float g=11.1f;
+		char ch='z';
+		System.out.printf("%1$s %2.2$f",s,g);
+
+	}
+
+}

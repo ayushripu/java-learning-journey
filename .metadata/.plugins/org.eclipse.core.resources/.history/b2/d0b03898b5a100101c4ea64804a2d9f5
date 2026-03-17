@@ -1,0 +1,40 @@
+package com.list;
+import java.util.*;
+public class Q3Vector {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		Vector<Integer> v=new Vector<>();
+		for(int i=1;i<=5;i++)
+		{
+			System.out.print("Enputed "+i+" Element : ");
+			v.add(sc.nextInt());
+		}
+		System.out.println("Original Vector: "+v);
+		v.add(2, 25);
+		System.out.println("After inserting 25 at index 2: "+v);
+		v.remove(4);
+		System.out.println("After removing element at index 4: "+v);
+		System.out.println("Using for Loop: ");
+		for(int i=1;i<=5;i++)
+		{
+			System.out.print(v);
+			
+		}
+		System.out.println("\nUsing Foreach Loop: ");
+		for(int i : v)
+		{
+			System.out.println(i);
+		}
+		System.out.println("Using Iterator: ");
+		Iterator<Integer> itr= v.iterator();
+		while(itr.hasNext())
+		{
+			Integer I=(Integer)itr.next();
+			
+			System.out.println(I);
+		}
+	}
+
+}

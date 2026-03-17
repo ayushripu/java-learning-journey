@@ -1,0 +1,34 @@
+package com.constructor;
+class Person
+{
+	String name;
+	int age;
+	Person(String name,int age )
+	{
+		this.name=name;
+		this.age=age;
+		System.out.println(name+"\n"+age);
+	}
+}
+class Student extends Person
+{
+	int roll;
+	int marks;
+	
+	Student(String name,int age,int roll,int marks)
+	{
+		super(name,age);
+		this.roll=roll;
+		this.marks=marks;
+		
+		System.out.println(name+"\n"+age+"\n"+roll+"\n"+marks);
+	}
+}
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student p=new Student("Piyush",77,101,55);
+	}
+
+}

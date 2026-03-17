@@ -1,0 +1,23 @@
+package com.leatcode;
+class Solution {
+    public boolean isValid(String s) {
+        
+          String str= s.substring(0, s.length());
+          
+          System.out.println(str);
+          return null != null;
+
+    }
+}
+public class Q20 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Solution s=new Solution();
+		
+		System.out.println(s.isValid("Ayush"));
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.check;
+import java.io.*;
+public class Check2
+{
+	public static void main(String[] args) 
+	{	System.out.println("Hlw");
+		PrintWriter pw = new PrintWriter("abc.txt");
+		pw.print("Hlw");
+		
+	}
+}

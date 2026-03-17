@@ -1,0 +1,72 @@
+package com.inheritance;
+/*एक प्रोग्राम बनाओ जिसमें एक Vehicle class हो।
+ *  उससे Car और Bike class inherit करें। 
+ *  हर class में एक method हो जो उसके type के बारे में print करे। */
+
+class Bike
+{
+	int wheel;
+	String color;
+	String Company;
+	String Type;
+	public Bike(int wheel,String color,String Company,String Type)
+	{
+		this.wheel=2;
+		this.color="Red";
+		this.Company="Honda";
+		this.Type="SuperBike";
+	}
+	public void displayBike()
+	{
+		System.out.println("Bike Wheel : "+this.wheel);
+		System.out.println("Bike color : "+this.color);
+		System.out.println("Bike Company : "+this.Company);
+		System.out.println("Bike Type : "+this.Type);
+	}
+}
+class Car
+{
+	int wheel;
+	String color;
+	String Company;
+	String Type;
+	public Car(int wheel,String color,String Company,String Type)
+	{
+		this.wheel=4;
+		this.color="Black";
+		this.Company="G-Wagnor";
+		this.Type="Sedan";
+	}
+	public void displayBike()
+	{
+		System.out.println("Car Wheel : "+this.wheel);
+		System.out.println("Car color : "+this.color);
+		System.out.println("Car Company : "+this.Company);
+		System.out.println("Car Type : "+this.Type);
+	}
+}
+class Vehicle extends Bike
+{
+	public Vehicle(int wheel,String color,String Company,String Type)
+	{
+		super(wheel,color,Company,Type);
+		System.out.println("<-: Your Bike Number :-> ");
+		super.displayBike();
+	}
+	public void display()
+	{
+		
+			System.out.println("Bike Wheel : "+this.wheel);
+			System.out.println("Bike color : "+this.color);
+			System.out.println("Bike Company : "+this.Company);
+			System.out.println("Bike Type : "+this.Type);
+	}
+}
+public class CarDetails {
+
+	public static void main(String[] args) {
+		Vehicle v=new Vehicle(0, null, null, null);
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.check;
+
+public class First {
+
+	public static void main(String[] args) {
+		  
+		
+			dostuff();
+		}
+		 static void dostuff()
+		  {
+			 domorestuff(); 
+		  }
+		 static void domorestuff()
+		 {
+			 System.out.println("Hello");
+		 }
+	}
+

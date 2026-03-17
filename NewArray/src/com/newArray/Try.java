@@ -1,0 +1,19 @@
+package com.newArray;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Try 
+{
+	public static void main(String[] args) {
+		int n,i=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Inputed Element No ");
+		n=sc.nextInt();
+		int a[]=new int[n];
+		for( i=0;i<a.length;i++)
+		{
+			a[i]=i+1;
+		}
+//		a=Arrays.copyOfRange(a, 0, i);
+		System.out.print(Arrays.toString(a));
+	}
+}

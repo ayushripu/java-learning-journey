@@ -1,0 +1,16 @@
+package com.While;
+
+public class Digit {
+
+	public static void main(String[] args) 
+	{
+		int n=7463;
+		while(n>0)
+		{
+			int r=n%10;
+			n=n/10;
+			System.out.println(r);
+		}
+	}
+
+}

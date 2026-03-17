@@ -1,0 +1,20 @@
+package com.For;
+
+public class DigitOfaNumber {
+
+	public static void main(String[] args) {
+
+		int i=8356,c=0;
+			while(i>0)
+			{
+				int  r=i/100;
+				i=i%100*100;
+				 System.out.println(r);
+				 c++;
+				 
+			}
+			System.out.println(c);
+			
+	}
+
+}

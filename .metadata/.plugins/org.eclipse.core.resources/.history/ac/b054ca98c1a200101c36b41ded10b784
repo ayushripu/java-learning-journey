@@ -1,0 +1,44 @@
+package com.mehod;
+import java.util.Scanner;
+class Max2nd{
+	void Max(int a[])
+	{
+		
+		
+	}
+}
+public class SecondMax {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.print("How many Number Do You Want: ");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print("Inputed "+(i+1)+" Element: ");
+			a[i]=sc.nextInt();
+		}
+		System.out.print("Inputed Element is: ");
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+" ");	
+		}
+		int max1,max2;
+		max1=max2=a[0];
+		for(int i=0;i<a.length;i++)
+		{
+			if(max1 < a[i])
+			{
+				max2=max1;
+				max1=a[i];
+			}
+			else if(max2 > a[i])
+			{
+				max2=a[i];
+			}
+		}
+		System.out.println("\nMax Value is: "+max2);
+	}
+}

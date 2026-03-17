@@ -1,0 +1,23 @@
+package com.leatcode;
+
+import java.util.*;
+
+class Solution
+{
+    public boolean isValid(String s) 
+    {
+    	stack s=new Stack();
+    }
+}
+public class Q20 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		Solution s=new Solution();
+		
+		System.out.println(s.isValid(")"));
+		
+	}
+
+}

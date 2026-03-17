@@ -1,0 +1,18 @@
+package com.For;
+
+class Counte
+{
+	public static void main(String[]args)
+	{
+		int n=6789;
+		int arm=0;
+		while(n>0)
+		{
+			int r=n%10;
+			n=n/0;
+			System.out.print(r);
+			arm=arm+r;
+		}
+		System.out.print(arm);
+	}
+}

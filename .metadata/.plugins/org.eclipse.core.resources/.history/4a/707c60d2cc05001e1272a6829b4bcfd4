@@ -1,0 +1,25 @@
+package com.newArray;
+
+import java.util.Scanner;
+
+public class Sum {
+
+	public static void main(String[] args) 
+	{
+		int n;
+		System.out.print("How MAny Number Do You Want ");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<a.length;i++)
+		{
+//			System.out.println("*");
+			for(int j=0;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}

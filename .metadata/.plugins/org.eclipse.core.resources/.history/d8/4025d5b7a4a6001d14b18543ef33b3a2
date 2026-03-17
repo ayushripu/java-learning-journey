@@ -1,0 +1,9 @@
+package com.FirstTest;
+public class Q1 
+{
+	public static void main(String[] args) 
+	{
+		int _abd = 67;
+		System.out.println(_abd);
+	}
+}

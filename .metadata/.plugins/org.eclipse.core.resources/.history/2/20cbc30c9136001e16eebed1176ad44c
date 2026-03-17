@@ -1,0 +1,17 @@
+package com.For;
+
+public class Reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=237,r=0;
+		System.out.print("Inputed Number is :-> "+n);
+		while(n>0)
+		{
+			r=n%10;
+			n=n/10;
+			System.out.print("reverse Number is "+r);
+		}
+	}
+
+}

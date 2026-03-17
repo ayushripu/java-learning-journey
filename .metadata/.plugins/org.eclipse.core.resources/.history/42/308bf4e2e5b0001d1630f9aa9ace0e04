@@ -1,0 +1,26 @@
+package com.Array;
+
+import java.util.Scanner;
+
+public class LeftShift {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=0,n,temp=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("How Many Number : ");
+		n=sc.nextInt();
+		int a[]=new int[n];
+		for(i=0;i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("Your Number is : ");
+		for(int x:a)
+		{
+			System.out.println(x);
+		}
+		
+	}
+
+}

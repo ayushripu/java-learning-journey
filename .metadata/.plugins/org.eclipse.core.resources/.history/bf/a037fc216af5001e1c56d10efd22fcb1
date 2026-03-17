@@ -1,0 +1,33 @@
+package com.Array;
+
+import java.util.Scanner;
+
+public class Roatated {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int r;
+		int a[]= {1,2,3,4,5};
+		for(int x:a)
+		{
+			System.out.print(x);
+			if(x<a.length)
+			{
+				System.out.print(",");
+			}
+//			System.out.println("");
+		}
+		System.out.println("\n");
+		int t=a[0];
+		for(int i=1;i<a.length;i++)
+		{
+			a[i-1]=a[i];
+		}
+		a[a.length-1]=t;
+		for(int x:a)
+			System.out.print(x+" ");
+		System.out.println();
+		
+	}
+
+}

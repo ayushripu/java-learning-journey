@@ -1,0 +1,22 @@
+package com.Queue;
+import java.util.*;
+public class PriorityQueueCheck 
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
+		System.out.println(pq.peek());
+		for(int i=1;i<=5;i++)
+		{
+			System.out.print("Enter "+i+" Element: ");
+			pq.offer(sc.nextInt());
+		}
+		System.out.println(pq);
+		System.out.println(pq.poll());
+		System.out.println(pq);
+//		pq.peek(30);
+		System.out.println(pq.peek());
+	}
+}

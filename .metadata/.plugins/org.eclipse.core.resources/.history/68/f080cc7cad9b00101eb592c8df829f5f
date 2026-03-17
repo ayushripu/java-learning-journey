@@ -1,0 +1,19 @@
+package com.demo;
+import java.util.*;
+public class Synchronization {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList al =new ArrayList();
+		
+		List sy=Collections.synchronizedList(al);
+		al.add(11);
+		al.add("Ayush");
+		al.add(12.4);
+		
+		System.out.println(sy);
+
+	}
+
+}

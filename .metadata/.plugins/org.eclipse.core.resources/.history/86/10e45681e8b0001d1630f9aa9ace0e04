@@ -1,0 +1,28 @@
+package com.Array;
+
+import java.util.Scanner;
+
+import javax.swing.Spring;
+
+public class FindBook 
+{
+	public static void main(String[] args) 
+	{
+		int i=0 ;
+		String m;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("How Many Books Do You Want : ");
+		int n=sc.nextInt();
+		m=sc.nextLine();
+		String Book[]=new String[n];
+		for(i=0;i<Book.length;i++)
+		{
+			Book[i]=sc.nextLine();
+			//System.out.print("Book No "+(1+i)+" is : ");
+		}
+		for(i=0;i<Book.length;i++)
+		{
+			System.out.println(Book[i]);
+		}
+	}
+}

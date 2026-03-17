@@ -1,0 +1,30 @@
+package com.inter;
+class BMW
+{
+	public void Type()
+	{
+		System.out.println("Super Car");
+	}
+}
+class Alto
+{
+	public void NewType(BMW speed)
+	{
+		speed.Type();
+	}
+}
+public class NeedInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BMW b=new BMW();
+		
+		Alto a=new Alto();
+		
+		b.Type();
+		
+		a.NewType(b);
+	
+	}
+
+}

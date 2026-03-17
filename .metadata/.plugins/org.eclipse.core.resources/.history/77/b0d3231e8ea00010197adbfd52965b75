@@ -1,0 +1,23 @@
+package com.Set;
+import java.util.*;
+public class CheckSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		HashSet s=new HashSet();
+		
+		for(int i=0;i<=4;i++)
+		{
+			System.out.print("Inputed "+(i+1)+ " Element : ");
+			s.add(sc.nextInt());
+			if(s.equals(9))
+			{
+				s.clear();
+			}
+		}
+		
+		System.out.println(s);
+	}
+
+}

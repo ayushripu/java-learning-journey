@@ -1,0 +1,14 @@
+class Digit
+{
+	public static void main(String[]args)
+	{
+		int n=2678;
+		int j=0;
+		while(n>0)
+		{
+			j=n%10;
+			n=n/10;
+		System.out.println(j);
+		}
+	}
+}

@@ -1,0 +1,22 @@
+package com.check;
+
+public class ExitVsFinally {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try
+		{
+			System.out.println("Hello");
+			System.exit(0); //JVM terminate here
+		}
+		catch(Exception e)
+		{
+			System.out.println("hyy"); 
+		}
+		finally
+		{
+			System.out.println("Not Execute this time");
+		}
+	}
+
+}

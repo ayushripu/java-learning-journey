@@ -1,0 +1,21 @@
+package com.check;
+
+public class MethodForException extends Throwable {
+
+	private static final long serialVersionUID = 1L;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			System.out.println(10/0);
+		}
+		catch(Exception e)
+		{
+//			System.out.println(e.toString()+"\n"+e); //NameOfException and Description
+			System.out.println(e.getMessage());//only Description
+//			e.printStackTrace(); //NameOfException and Description and Stack of exception
+		}
+
+	}
+
+}

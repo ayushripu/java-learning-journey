@@ -1,0 +1,22 @@
+package com.check;
+
+public class FinallyBlock {
+
+	public static void main(String[] args) {
+		try
+		{
+			System.out.println("Try");
+			System.out.println(10/0);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception ");
+		}
+		finally
+		{
+			System.out.println("Hlw");
+		}
+
+	}
+
+}

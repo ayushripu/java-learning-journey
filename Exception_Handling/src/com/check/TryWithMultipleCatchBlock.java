@@ -1,0 +1,22 @@
+package com.check;
+
+public class TryWithMultipleCatchBlock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try
+		{
+			System.out.println(10/0);
+		}
+		catch(Exception e) //Parent Exception
+		{
+			e.printStackTrace();
+		}
+//		catch(ArithmeticException e) //Child Exception
+//		{
+//			e.printStackTrace();
+//		}
+	}
+
+}

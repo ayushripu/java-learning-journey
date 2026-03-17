@@ -1,0 +1,11 @@
+package com.check;
+import java.io.*;
+public class Check2
+{
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		PrintWriter pw = new PrintWriter("obj.txt");
+		pw.print("Hlw Ayush");
+		System.out.println("Hlw");
+	}
+}

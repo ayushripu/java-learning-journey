@@ -1,0 +1,34 @@
+package com.check;
+
+public class NestedTryCatch 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		try
+		{
+			int a[]= {10,0,15,11,12};
+			
+			try 
+			{
+				int c= a[0]/a[2];
+				System.out.println("c = "+c);
+			}
+			catch(ArithmeticException e)
+			{
+				System.out.println("Divided By Zero"+e);
+			}
+			
+			System.out.println(a[77]);
+		}
+		catch(ArrayIndexOutOfBoundsException a)
+		{
+			System.out.println("length of array error"+a);
+		}
+		finally
+		{
+			System.out.println("Outer Finally Block");
+		}
+	}
+}

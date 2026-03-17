@@ -29,6 +29,8 @@ public class CheckConstructor {
 	{
 		NewFruits n = new NewFruits(6);
 		NewFruits n1 = new NewFruits();
+		
+//		Completed 
 
 	}
 

@@ -2,7 +2,6 @@ package com.constructor;
 class A
 {
     int sum = 0;
-
     A()
     {
         int a = 10;
@@ -11,13 +10,11 @@ class A
         sum = a + b;   
        
     }
-
     public void result()
     {
         System.out.println("Sum is: " + sum);
     }
 }
-
 class B extends A
 {
     B()
@@ -31,9 +28,6 @@ public class ChecknewConst {
 		// TODO Auto-generated method stub
 
 		A a = new A();
-		a.result();
-		
-		
+		a.result();	
 	}
-
 }

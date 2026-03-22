@@ -8,14 +8,14 @@ public class First {
 		}
 	public static void dostuff()
 		  {
-			 domorestuff(); 
+			 domorestuff();
 		  }
 	public static void domorestuff()
 			 {
 				 try 
 				 { 
 					 stuff();
-				 System.out.println(10/  2);
+				 System.out.println(10/2);
 				 
 				 }
 				 catch(ArithmeticException e)

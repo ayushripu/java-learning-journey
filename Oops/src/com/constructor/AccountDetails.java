@@ -13,7 +13,7 @@ class Account
 	}
 	public int getAccountNumber()
 	{
-		return AccountNumber;
+		return AccountNumber;   
 	}
 	public String getAccountHolderName()
 	{
@@ -67,8 +67,8 @@ class ATM
 		System.out.println("Current Bls: "+acc.getbalance());
 	}
 }
-public class AccountDetails {
-
+public class AccountDetails 
+{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Account ab = new Account(78945, "Ayush", 85.0);

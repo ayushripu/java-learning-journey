@@ -4,6 +4,6 @@
 /**
  * @author asus
  *
- */
+ */ 
 module Inheritance {
 }

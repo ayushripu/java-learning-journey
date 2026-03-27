@@ -10,7 +10,7 @@ public class Q2942 {
 		
 		l1.add("leet");
 		l1.add("code");
-		
+		     
 		System.out.println(l1);
 		
 		char s =   'e';

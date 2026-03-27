@@ -3,7 +3,7 @@
  */
 /**
  * @author asus
- *
+ * 
  */ 
 module Inheritance {
 }
